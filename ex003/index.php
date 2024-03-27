@@ -14,12 +14,20 @@
     </style>
 </head>
 <body>
+    <h1>Teste de tipos primitivos</h1>
     <?php 
-        $nome = "Bruno";
-        $sobrenome = "Rodrigues";
-        const pais = "Brasil";
+        $num = 0x1A; //hexadecimal
+        $num1 = 0b11010; //binário
+        $num2 = 032; //octal
+        $num3 = 3e2; //3.10^2
+        $bol = false;
 
-        print "Muito prazer, $nome $sobrenome! Você mora no ". pais;
+        print "$num $num1 $num2\n";
+        var_dump($num3);
+
+        $num3 = (integer) 3e2;
+
+        var_dump($num3);
     ?>
 </body>
 </html>
