@@ -1,0 +1,4 @@
+
+const backToPage = () => {
+    history.back();
+}

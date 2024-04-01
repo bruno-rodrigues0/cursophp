@@ -17,6 +17,10 @@
            
            print("É um prazer te conhecer, $nome $snome!");
         ?>
+
+        <button onclick="backToPage()">Voltar</button>
     </main>
+
+    <script src="./output/ex005/script.js"></script>
 </body>
 </html>
