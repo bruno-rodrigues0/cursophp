@@ -16,18 +16,44 @@
 <body>
     <h1>Teste de tipos primitivos</h1>
     <?php 
-        $num = 0x1A; //hexadecimal
-        $num1 = 0b11010; //binário
-        $num2 = 032; //octal
-        $num3 = 3e2; //3.10^2
-        $bol = false;
+        // $num = 0x1A; //hexadecimal
+        // $num1 = 0b11010; //binário
+        // $num2 = 032; //octal
+        // $num3 = 3e2; //3.10^2
+        // $bol = false;
 
-        print "$num $num1 $num2\n";
-        var_dump($num3);
+        // print "$num $num1 $num2\n";
+        // var_dump($num3);
 
-        $num3 = (integer) 3e2;
+        // $num3 = (integer) 3e2; // naturalmente float, forçado a ser integer (coerção)
 
-        var_dump($num3);
+
+        // var_dump($num3);
+
+
+        // arrys
+
+        // $array = [6, true, 3.14, 'Bruno'];
+
+        // print($array);
+
+        // var_dump($array);
+
+        // objects
+
+        class Pessoa{
+            public string $name;
+
+            public function __construct($name){
+                $this -> name = $name; 
+            }
+        }
+
+        $p = new Pessoa("Bruno");
+            
+        print($p -> name)
+
+
     ?>
 </body>
 </html>
