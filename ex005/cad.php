@@ -15,7 +15,8 @@
            $nome = $_GET["nome"];      
            $snome = $_GET["sobrenome"];
            
-           print("É um prazer te conhecer, $nome $snome!");
+           
+           print(($nome || $snome) ? "É um prazer te conhecer, $nome  $snome!" : "Nada informado");
         ?>
 
         <button onclick="backToPage()">Voltar</button>
