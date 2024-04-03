@@ -22,6 +22,6 @@
         <button onclick="backToPage()">Voltar</button>
     </main>
 
-    <script src="./output/ex005/script.js"></script>
+    <script src="../../output/ex005/script.js"></script>
 </body>
 </html>
