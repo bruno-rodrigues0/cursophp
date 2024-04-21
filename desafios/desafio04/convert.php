@@ -8,10 +8,14 @@
 </head>
 <body>
     <?php 
-        $value = $_GET["value"];
-        $cotacao = 5.08;
 
-        $convert = $value / $cotacao;
+        $value = $_GET["value"];
+
+        $url = 'https://olinda.bcb.gov.br/olinda/servico/PTAX/versao/v1/odata/CotacaoDolarPeriodo(dataInicial=@dataInicial,dataFinalCotacao=@dataFinalCotacao)?@dataInicial=\'04-21-2024\'&@dataFinalCotacao=\'04-21-2024\'&$top=1&$orderby=dataHoraCotacao%20desc&$format=json&$select=cotacaoCompra,dataHoraCotacao';
+
+        $dados = json_decode(file_get_contents($url), true);
+
+        $convert = $dados['value'][0]['contacaoCompra'];
     ?>    
 
     <div>

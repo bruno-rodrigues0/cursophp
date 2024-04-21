@@ -9,7 +9,7 @@
 <body>
     <?php 
         function gerarRandom(){
-            $numero = random_int(0, 100);
+            $numero = mt_rand(0, 100);
             return $numero;
         }
     ?>
